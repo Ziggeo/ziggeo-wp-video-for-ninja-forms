@@ -1,0 +1,81 @@
+<script id="tmpl-nf-field-video-recorder" type="text/template">
+	<input type="hidden" id="nf-field-{{{ data.id }}}" name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}" class="{{{ data.renderClasses() }}} nf-element" value="">
+	<ziggeorecorder
+			{{{ data.maybeDisabled() }}}
+
+			aria-invalid="false"
+			aria-describedby="nf-error-{{{ data.id }}}"
+			aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+			{{{ data.maybeRequired() }}}
+
+			ziggeo-theme="{{{data.recorder_theme}}}"
+			ziggeo-themecolor="{{{data.themecolor}}}"
+			ziggeo-width="{{{data.width}}}"
+
+			<# if( data.popup === 1 ){ #>
+				ziggeo-popup="{{{data.popup}}}"
+				ziggeo-popup-width="{{{data.popup_width}}}"
+				ziggeo-popup-height="{{{data.popup_height}}}"
+			<# } #>
+
+			<# if( data.faceoutline === 1 ){ #>
+				ziggeo-faceoutline
+			<# } #>
+
+			<# if( data.video_title !== '' ){ #>
+				ziggeo-title="{{{data.video_title}}}"
+			<# } #>
+
+			<# if( data.video_description !== '' ){ #>
+				ziggeo-description="{{{data.video_description}}}"
+			<# } #>
+
+			<# if( data.video_tags !== '' ){ #>
+				ziggeo-tags="{{{data.video_tags}}}"
+			<# } #>
+
+			<# if( data.custom_data !== '' ){ #>
+				ziggeo-custom-data="{{{data.custom_data}}}"
+			<# } #>
+
+			<# if( data.recording_width !== '' ){ #>
+				ziggeo-recordingwidth="{{{data.recording_width}}}"
+			<# } #>
+
+			<# if( data.recording_height !== '' ){ #>
+				ziggeo-recordingheight="{{{data.recording_height}}}"
+			<# } #>
+
+			<# if( data.recording_time_max !== '' && data.recording_time_max !== 0 ){ #>
+				ziggeo-timelimit="{{{data.recording_time_max}}}"
+			<# } #>
+
+			<# if( data.recording_time_min !== '' && data.recording_time_min !== 0 ){ #>
+				ziggeo-mintimelimit="{{{data.recording_time_min}}}"
+			<# } #>
+
+			<# if( data.recording_amount !== '' && data.recording_amount !== 0 ){ #>
+				ziggeo-recordings="{{{data.recording_amount}}}"
+			<# } #>
+
+			<# if( data.effect_profiles !== '' ){ #>
+				ziggeo-effect-profile="{{{data.effect_profiles}}}"
+			<# } #>
+			<# if( data.video_profile !== '' ){ #>
+				ziggeo-video-profile="{{{data.video_profile}}}"
+			<# } #>
+			<# if( data.meta_profile !== '' ){ #>
+				ziggeo-meta-profile="{{{data.meta_profile}}}"
+			<# } #>
+			<# if( data.client_auth !== '' ){ #>
+				ziggeo-client-auth="{{{data.client_auth}}}"
+			<# } #>
+			<# if( data.server_auth !== '' ){ #>
+				ziggeo-server-auth="{{{data.server_auth}}}"
+			<# } #>
+
+			data-is-nf="true"
+			data-id="nf-field-{{{ data.id }}}"
+	></ziggeorecorder>
+</script>

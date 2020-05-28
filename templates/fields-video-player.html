@@ -1,0 +1,38 @@
+<script id="tmpl-nf-field-video-player" type="text/template">
+	<input type="hidden" id="nf-field-{{{ data.id }}}" name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}" class="{{{ data.renderClasses() }}} nf-element" value="">
+	<ziggeoplayer
+			{{{ data.maybeDisabled() }}}
+
+			aria-invalid="false"
+			aria-describedby="nf-error-{{{ data.id }}}"
+			aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+			{{{ data.maybeRequired() }}}
+
+			ziggeo-video="{{{data.videotoken}}}"
+			ziggeo-theme="{{{data.player_theme}}}"
+			ziggeo-themecolor="{{{data.themecolor}}}"
+			ziggeo-width="{{{data.width}}}"
+
+			<# if( data.popup === 1 ){ #>
+				ziggeo-popup="{{{data.popup}}}"
+				ziggeo-popup-width="{{{data.popup_width}}}"
+				ziggeo-popup-height="{{{data.popup_height}}}"
+			<# } #>
+			<# if( data.effect_profiles !== '' ){ #>
+				ziggeo-effect-profile="{{{data.effect_profiles}}}"
+			<# } #>
+			<# if( data.video_profile !== '' ){ #>
+				ziggeo-video-profile="{{{data.video_profile}}}"
+			<# } #>
+			<# if( data.client_auth !== '' ){ #>
+				ziggeo-client-auth="{{{data.client_auth}}}"
+			<# } #>
+			<# if( data.server_auth !== '' ){ #>
+				ziggeo-server-auth="{{{data.server_auth}}}"
+			<# } #>
+
+			data-is-nf="true"
+			data-id="nf-field-{{{ data.id }}}"
+	></ziggeoplayer>
+</script>

@@ -1,0 +1,46 @@
+<script id="tmpl-nf-field-videowall" type="text/template">
+	<input type="hidden" id="nf-field-{{{ data.id }}}" name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}" class="{{{ data.renderClasses() }}} nf-element" value="">
+	<div id="videowall-nf-field-{{{ data.id }}}" class="ziggeoninjaforms-videowall"
+			{{{ data.maybeDisabled() }}}
+
+			aria-invalid="false"
+			aria-describedby="nf-error-{{{ data.id }}}"
+			aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+			{{{ data.maybeRequired() }}}
+
+			data-videos-width="{{{data.videowidth}}}"
+			data-videos-height="{{{data.videoheight}}}"
+			data-videos-autoplay="{{{data.autoplay}}}"
+			data-videos-autoplaytype=""
+
+			data-indexing-perPage="{{{data.videos_per_page}}}"
+			data-indexing-status="{{{data.show_videos}}}"
+			data-indexing-design="{{{data.design}}}"
+			data-indexing-fresh="true"
+
+			<# if( data.no_videos === 'ShowTeamplate' ){ #>
+				data-onNoVideos-showTemplate="true"
+			<# } else { #>
+				data-onNoVideos-showTemplate="false"
+			<# } #>
+
+			<# if( data.no_videos === 'HideWall' ){ #>
+				data-onNoVideos-hideWall="true"
+			<# } else { #>
+				data-onNoVideos-hideWall="false"
+			<# } #>
+
+			data-onNoVideos-templateName="{{{data.template_name}}}"
+			data-onNoVideos-message="{{{data.message}}}"
+
+			data-title="{{{data.title}}}"
+			data-tags="{{{data.videos_to_show}}}"
+
+			data-show="{{{data.show}}}"
+
+			data-is-nf="true"
+			data-id="nf-field-{{{ data.id }}}"
+	></div>
+	{{{ziggeoninjaformsCreateVideoWall('videowall-nf-field-' + data.id)}}}
+</script>

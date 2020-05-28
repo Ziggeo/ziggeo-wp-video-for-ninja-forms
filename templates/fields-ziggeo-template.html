@@ -1,0 +1,17 @@
+<script id="tmpl-nf-field-ziggeo-template" type="text/template">
+	<input type="hidden" id="nf-field-{{{ data.id }}}" name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}" class="{{{ data.renderClasses() }}} nf-element" value="">
+	<div id="ziggeoninjaforms-{{{ data.id }}}" class="ziggeoninjaforms-templates"
+			{{{ data.maybeDisabled() }}}
+
+			aria-invalid="false"
+			aria-describedby="nf-error-{{{ data.id }}}"
+			aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+			{{{ data.maybeRequired() }}}
+
+			data-is-nf="true"
+			data-id="nf-field-{{{ data.id }}}"
+
+			{{{ ziggeoninjaformsGetTemplate(data.template_name, data.id) }}}
+	></div>
+</script>

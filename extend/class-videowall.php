@@ -115,7 +115,7 @@ class Ninja_Forms_Field_Videowall extends NF_Abstracts_Field {
 			'type'			=> 'select',
 				'options'	=>  array(
 					array('label' => 'ShowMessage',			'value' => 'ShowMessage'),
-					array('label' => 'ShowTeamplate',		'value' => 'ShowTeamplate'),
+					array('label' => 'ShowTemplate',		'value' => 'ShowTemplate'),
 					array('label' => 'HideWall',			'value' => 'HideWall')
 				),
 			'group'			=> 'advanced',

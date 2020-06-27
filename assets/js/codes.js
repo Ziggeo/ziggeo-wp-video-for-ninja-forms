@@ -86,23 +86,6 @@ function ziggeoninjaformsCreateVideoWall(videowall_id) {
 		return '';
 	}
 
-	/*
-		data-videos-width="{{{data.videowidth}}}"
-		data-videos-height="{{{data.videoheight}}}"
-		data-videos-autoplay="{{{data.autoplay}}}"
-		data-videos-autoplaytype=""
-		data-indexing-perPage="{{{data.videos_per_page}}}"
-		data-indexing-status="{{{data.show_videos}}}"
-		data-indexing-design="{{{data.wall_design}}}"
-		data-indexing-fresh="true"
-		data-onNoVideos-showTemplate="{{{data.template_name}}}"
-		data-onNoVideos-message="{{{data.message}}}"
-		data-onNoVideos-templateName="{{{data.template_name}}}"
-		data-onNoVideos-hideWall="{{{!data.show}}}"
-		data-title="{{{data.title}}}"
-		data-tags="{{{data.videos_to_show}}}"
-	*/
-
 	videowallszCreateWall(videowall_id, {
 		videos: {
 			width: embed_placeholder.getAttribute('data-videos-width'),
@@ -141,41 +124,3 @@ function ziggeoninjaformsCreateVideoWall(videowall_id) {
 function ziggeoninjaformsShowVideoWall(videowall_id) {
 	//videowallszUIVideoWallShow(videowall_id);
 }
-
-
-
-/*
-// On Document Ready...
-jQuery( document ).ready( function( $ ) {
-
-	ziggeoninjaformsInitFrontEndRenderVide();
-
-});
-
-//We do not really need this at this time
-function ziggeoninjaformsInitFrontEndRenderVide() {
-	// Create a new object for custom validation of a custom field.
-	var ziggeoninjaformsViewRender = Marionette.Object.extend( {
-
-		initialize: function() {
-		
-			// Listen to the render:view event for a field type. Example: Textbox field.
-			this.listenTo( nfRadio.channel( 'video-player' ), 'render:view', this.renderView );
-		},
-
-		renderView: function( view ) {
-		
-			// Check if this is the right field. Example check for field key.
-			//if ( 'example_key' != view.model.get( 'key' ) ) return false;
-			// get element reference
-			//var el = jQuery( view.el ).find( '.nf-element' );
-			
-			// Do stuff.
-		}
-
-	});
-
-	// Instantiate our custom field's controller, defined above.
-	new ziggeoninjaformsViewRender();
-}
-*/

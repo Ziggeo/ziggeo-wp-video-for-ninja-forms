@@ -3,7 +3,7 @@ Contributors: oliverfriedmann, baned, carloscsz409, natashacalleia
 Tags: ziggeo, video, video field, form builder, video form, Ninja Forms
 Requires at least: 3.0.1
 Tested up to: 5.4.2
-Stable tag: 1.1
+Stable tag: 1.2
 Requires PHP: 5.2.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -60,6 +60,14 @@ To submit your questions simply go to our [Help Center](https://support.ziggeo.c
 Please go to our [WordPress forum](https://support.ziggeo.com/hc/en-us/community/topics/200753347-WordPress-plugin) and add your suggestion within it. This allows everyone to see and vote on it and us to determine what should be next.
 
 == Upgrade Notice ==
+
+= 1.2 =
+* Added custom tags (tags based on other fields on the form) which are applied to the video once the video is verified.
+
+== Upgrade Notice ==
+
+= 1.1 =
+* Cleanup and integrations updates
 
 = 1.0 =
 Initial commit

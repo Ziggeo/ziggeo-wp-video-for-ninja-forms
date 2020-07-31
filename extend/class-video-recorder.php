@@ -287,6 +287,16 @@ class Ninja_Forms_Field_Video_Recorder extends NF_Abstracts_Field {
 			'width'			=> 'full'
 		);
 
+		// Server auth to use
+		$__settings['nf_custom_tags'] = array(
+			'name'			=> 'nf_custom_tags',
+			'type'			=> 'textbox',
+			'group'			=> 'advanced',
+			'label'			=> 'Custom Tags',
+			'value'			=> '',
+			'width'			=> 'full'
+		);
+
 		$this->_settings = apply_filters('ziggeoninjaforms_video_recorder_settings', $__settings);
 
 	}

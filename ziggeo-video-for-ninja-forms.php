@@ -4,7 +4,7 @@ Plugin Name: Ziggeo Video for Ninja Forms
 Plugin URI: https://ziggeo.com/integrations/wordpress
 Description: Add award winning Ziggeo video service platform to your Ninja Forms form builder and forms
 Author: Ziggeo
-Version: 1.2
+Version: 1.3
 Author URI: https://ziggeo.com
 */
 
@@ -19,7 +19,7 @@ define('ZIGGEONINJAFORMS_ROOT_PATH', plugin_dir_path(__FILE__) );
 define('ZIGGEONINJAFORMS_ROOT_URL', plugins_url('', __FILE__) . '/');
 
 //plugin version - this way other plugins can get it as well and we will be updating this file for each version change as is
-define('ZIGGEONINJAFORMS_VERSION', '1.2');
+define('ZIGGEONINJAFORMS_VERSION', '1.3');
 
 //Include files
 include_once(ZIGGEONINJAFORMS_ROOT_PATH . 'core/run.php');

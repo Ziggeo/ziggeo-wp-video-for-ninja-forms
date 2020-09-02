@@ -63,6 +63,7 @@ Please go to our [WordPress forum](https://support.ziggeo.com/hc/en-us/community
 
 = 1.3 =
 * Improvement: API calls now use V2 only
+* Improvement: Submenu creation now has a check to make sure that the core plugin is installed before calling it's function, which will help with any hidden errors during install if core plugin is not present.
 
 == Upgrade Notice ==
 

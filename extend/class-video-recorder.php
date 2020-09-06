@@ -287,7 +287,7 @@ class Ninja_Forms_Field_Video_Recorder extends NF_Abstracts_Field {
 			'width'			=> 'full'
 		);
 
-		// Server auth to use
+		// Custom tags
 		$__settings['nf_custom_tags'] = array(
 			'name'			=> 'nf_custom_tags',
 			'type'			=> 'textbox',
@@ -295,6 +295,17 @@ class Ninja_Forms_Field_Video_Recorder extends NF_Abstracts_Field {
 			'label'			=> 'Custom Tags',
 			'value'			=> '',
 			'width'			=> 'full'
+		);
+
+		// Dynamic Custom data 
+		$__settings['nf_custom_data'] = array(
+			'name'			=> 'nf_custom_data',
+			'type'			=> 'textbox',
+			'group'			=> 'advanced',
+			'label'			=> 'Dynamic Custom Data',
+			'value'			=> '',
+			'width'			=> 'full',
+			'help'          => 'Add custom data based on the example in plugin\'s readme/info. It should be provided as "key": field_ID. Multiple fields are separated by comma'
 		);
 
 		$this->_settings = apply_filters('ziggeoninjaforms_video_recorder_settings', $__settings);

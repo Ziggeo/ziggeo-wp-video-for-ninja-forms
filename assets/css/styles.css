@@ -10,3 +10,8 @@
     color: gray;
     left: calc( 100% - 50px);
 }
+
+/* Make sure the file upload field is not sized improperly. */
+.nf-field-element ziggeorecorder input, .nf-field-element ziggeoplayer input {
+    height: 100%;
+}

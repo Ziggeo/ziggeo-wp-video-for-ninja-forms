@@ -2,8 +2,8 @@
 Contributors: oliverfriedmann, baned, carloscsz409, natashacalleia
 Tags: ziggeo, video, video field, form builder, video form, Ninja Forms
 Requires at least: 3.0.1
-Tested up to: 5.6
-Stable tag: 1.4
+Tested up to: 5.8.1
+Stable tag: 1.5
 Requires PHP: 5.2.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -82,12 +82,15 @@ Please go to our [WordPress forum](https://support.ziggeo.com/hc/en-us/community
 
 == Upgrade Notice ==
 
+= 1.5 =
+* Improvement: Seems that in some cases Ninja Forms fields get some styles added that can make it harder to click on the upload file button. This update adds the CSS that address the same.
+
+== Changelog ==
+
 = 1.4 =
 * Added: Now you can set the custom data from dynamic values. The only important part is that once verified event fires (after recording) it will try to capture the fields you set. It will not capture any changes made after.
 * Added: Added hooks for the Ninja forms verified event, allowing you to add your own code handler to react once video is verified within the Ninja Forms form.
 * Modified: Custom (dynamic) tags and capturing token is happening through the new verified event, allowing you to see how to set up and use the same.
-
-== Changelog ==
 
 = 1.3 =
 * Improvement: API calls now use V2 only

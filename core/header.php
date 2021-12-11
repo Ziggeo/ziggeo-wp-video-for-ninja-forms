@@ -2,6 +2,7 @@
 
 //Output the info about the gravity forms that can help us with the form
 add_action('ziggeo_add_to_ziggeowp_object', function() {
+
 	$options = ziggeoninjaforms_get_plugin_options();
 	$format = '';
 

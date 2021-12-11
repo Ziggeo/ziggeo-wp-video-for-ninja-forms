@@ -71,6 +71,7 @@ function ziggeoninjaforms_include_plugin_files() {
 
 	include_once(ZIGGEONINJAFORMS_ROOT_PATH . 'core/simplifiers.php');
 	include_once(ZIGGEONINJAFORMS_ROOT_PATH . 'core/assets.php');
+	include_once(ZIGGEONINJAFORMS_ROOT_PATH . 'core/header.php');
 	include_once(ZIGGEONINJAFORMS_ROOT_PATH . 'core/ajax.php');
 
 	//Fields specific

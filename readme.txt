@@ -3,7 +3,7 @@ Contributors: oliverfriedmann, baned, carloscsz409, natashacalleia
 Tags: ziggeo, video, video field, form builder, video form, Ninja Forms
 Requires at least: 3.0.1
 Tested up to: 5.8.1
-Stable tag: 1.6
+Stable tag: 1.6.2
 Requires PHP: 5.2.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -82,10 +82,13 @@ Please go to our [WordPress forum](https://support.ziggeo.com/hc/en-us/community
 
 == Upgrade Notice ==
 
-= 1.6 =
-* Fix: Setting what values to be saved was not working properly. This has been addressed with this new update. Your submissions could be saved in a different manner than default if your settings were set to something else. If this is the case, you can always change them by going to Ziggeo Video > Ziggeo Video for Ninja Forms in your WordPress dashboard.
+= 1.6.2 =
+* Fix: In some cases there was an error show in admin panel and this fix prevents it from happening.
 
 == Changelog ==
+
+= 1.6 =
+* Fix: Setting what values to be saved was not working properly. This has been addressed with this new update. Your submissions could be saved in a different manner than default if your settings were set to something else. If this is the case, you can always change them by going to Ziggeo Video > Ziggeo Video for Ninja Forms in your WordPress dashboard.
 
 = 1.5 =
 * Improvement: Seems that in some cases Ninja Forms fields get some styles added that can make it harder to click on the upload file button. This update adds the CSS that address the same.

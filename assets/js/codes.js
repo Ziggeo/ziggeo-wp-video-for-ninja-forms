@@ -9,9 +9,9 @@
 //		* ziggeoninjaformsCreateVideoWall()
 //		* ziggeoninjaformsShowVideoWall()
 // 3. Ziggeo Hooks
-//		* ziggeofluentformsSaveToken()
-//		* ziggeofluentformsAddCustomTags()
-//		* ziggeofluentformsAddCustomData()
+//		* ziggeoninjaformsSaveToken()
+//		* ziggeoninjaformsAddCustomTags()
+//		* ziggeoninjaformsAddCustomData()
 
 
 /////////////////////////////////////////////////
@@ -96,6 +96,15 @@
 
 	//Helper to get the template used on the form
 	function ziggeoninjaformsGetTemplate(template_id, field_id) {
+
+		if(typeof ziggeoAjax === 'undefined') {
+			setTimeout(function() {
+				ziggeoninjaformsGetTemplate(template_id, field_id);
+			}, 200);
+
+			return false;
+		}
+
 		ziggeoAjax({ operation: 'ziggeoninjaforms_get_template_code', template: template_id },
 			function(response) {
 				if(document.getElementById('ziggeoninjaforms-' + field_id)) {

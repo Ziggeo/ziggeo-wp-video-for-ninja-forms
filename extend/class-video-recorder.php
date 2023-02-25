@@ -310,6 +310,11 @@ class Ninja_Forms_Field_Video_Recorder extends NF_Abstracts_Field {
 
 		$this->_settings = apply_filters('ziggeoninjaforms_video_recorder_settings', $__settings);
 
+		// lazyload support, we only add it if this is a frontend request using GET, otherwise we do nothing
+		if($_SERVER['REQUEST_METHOD'] === 'GET') {
+			// We must add it for delayed output since otherwise it will print it before any other content
+			add_action('wp_head', "ziggeoninjaforms_lazyload_support");
+		}
 	}
 
 		public function filter_default_value( $default_value, $field_class, $settings ) {

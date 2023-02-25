@@ -2,8 +2,8 @@
 Contributors: oliverfriedmann, baned, carloscsz409, natashacalleia
 Tags: ziggeo, video, video field, form builder, video form, Ninja Forms
 Requires at least: 3.0.1
-Tested up to: 5.8.3
-Stable tag: 1.6.2
+Tested up to: 6.1.1
+Stable tag: 1.7
 Requires PHP: 5.2.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -27,6 +27,14 @@ Add player, recorder, screen recorder and more to your forms.
 Great support to offer you assistance with setup.
 
 == Screenshots ==
+
+1. Form Fields - Seamless integration if Ziggeo fields with other Ninja Form fields
+2. Form Builder - Video Player
+3. Form Builder - Video Recorder
+4. Form Builder - VideoWall Field
+5. Form Builder - Ziggeo Templates
+6. Submissions - Video Preview
+7. Admin options
 
 
 == Installation ==
@@ -82,10 +90,14 @@ Please go to our [WordPress forum](https://support.ziggeo.com/hc/en-us/community
 
 == Upgrade Notice ==
 
-= 1.6.2 =
-* Fix: In some cases there was an error show in admin panel and this fix prevents it from happening.
+= 1.7 =
+* Added: Support for the WP Core plugin lazyload feature
+* Improvement: Submissions can be viewed in the Submissions panel even with Lazy Load feature turned on
 
 == Changelog ==
+
+= 1.6.2 =
+* Fix: In some cases there was an error show in admin panel and this fix prevents it from happening.
 
 = 1.6 =
 * Fix: Setting what values to be saved was not working properly. This has been addressed with this new update. Your submissions could be saved in a different manner than default if your settings were set to something else. If this is the case, you can always change them by going to Ziggeo Video > Ziggeo Video for Ninja Forms in your WordPress dashboard.

@@ -130,6 +130,22 @@ function ziggeoninjaforms_init() {
 		return $paths;
 	});
 
+	// Detect if lazyload is enabled and if someone is viewing the submissions panel
+	if(is_admin() && isset($_GET, $_GET['page']) && $_GET['page'] === 'nf-submissions') {
+		if(ziggeo_p_is_lazyloaded() === true) {
+			// We need to add various things
+			if(!defined('ZIGGEO_FOUND')) {
+				define('ZIGGEO_FOUND', true);
+			}
+
+			echo ziggeo_p_get_lazyload_activator();
+
+			if(!defined('ZIGGEO_FOUND_POST')) {
+				define('ZIGGEO_FOUND_POST', true);
+			}
+		}
+	}
+
 }
 
 
@@ -151,7 +167,7 @@ function ziggeoninjaforms_run() {
 
 	//Check current Ziggeo version
 	if( version_compare(ziggeo_get_version(), '2.0') >= 0 &&
-		//check the WPForms version
+		//check the Ninja Forms version
 		version_compare(ziggeoninjaforms_get_version(), '3.4.23') >= 0) {
 
 		if(ziggeo_integration_is_enabled('ziggeo-video-for-ninja-forms')) {

@@ -132,7 +132,7 @@ function ziggeoninjaforms_init() {
 
 	// Detect if lazyload is enabled and if someone is viewing the submissions panel
 	if(is_admin() && isset($_GET, $_GET['page']) && $_GET['page'] === 'nf-submissions') {
-		if(ziggeo_p_is_lazyloaded() === true) {
+		if(function_exists('ziggeo_p_is_lazyloaded') && ziggeo_p_is_lazyloaded() === true) {
 			// We need to add various things
 			if(!defined('ZIGGEO_FOUND')) {
 				define('ZIGGEO_FOUND', true);

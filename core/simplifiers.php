@@ -264,10 +264,13 @@ function ziggeoninjaforms_get_plugin_options($specific = null) {
 
 // lazyload support
 function ziggeoninjaforms_lazyload_support() {
-	echo ziggeo_p_get_lazyload_activator();
 
-	if(!defined('ZIGGEO_FOUND_POST')) {
-		define('ZIGGEO_FOUND_POST', true);
+	if(function_exists('ziggeo_p_get_lazyload_activator')) {
+		echo ziggeo_p_get_lazyload_activator();
+
+		if(!defined('ZIGGEO_FOUND_POST')) {
+			define('ZIGGEO_FOUND_POST', true);
+		}
 	}
 }
 

@@ -1,8 +1,8 @@
 === Ziggeo Video for Ninja Forms ===
-Contributors: oliverfriedmann, baned, carloscsz409, natashacalleia
+Contributors: oliverfriedmann, baned
 Tags: ziggeo, video, video field, form builder, video form, Ninja Forms
 Requires at least: 3.0.1
-Tested up to: 6.2
+Tested up to: 6.7.2
 Stable tag: 1.7.1
 Requires PHP: 5.2.4
 License: GPLv3 or later
